@@ -17,4 +17,4 @@ steps:
   inputs:
     scriptPath: 'awscli.sh'
     failOnStandardError: true
-  displayName: 'Configure App environment variables'`
+  displayName: 'Configure App environment variables'
