@@ -9,10 +9,13 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-steps:
-- script: awscli.sh
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+# Shell script v2
+# Run a shell script using Bash.
+- task: ShellScript@2
+  inputs:
+    scriptPath: awscli.sh
+    #args: # string. Arguments. 
+  # Advanced
+    #disableAutoCwd: false # boolean. Specify Working Directory. Default: false.
+    #cwd: # string. Optional. Use when disableAutoCwd = true. Working Directory. 
+    #failOnStandardError: false # boolean. Fail on Standard Error. Default: false.
