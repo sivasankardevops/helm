@@ -7,7 +7,9 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: "ubuntu-latest"
+
+steps:
 
 # Shell script v2
 # Run a shell script using Bash.
