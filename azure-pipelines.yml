@@ -15,4 +15,6 @@ steps:
 # Run a shell script using Bash.
 - task: ShellScript@2
   inputs:
-    scriptPath: awscli.sh
+    scriptPath: 'awscli.sh'
+    failOnStandardError: true
+  displayName: 'Configure App environment variables'`
